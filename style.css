@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+/*### Neutral*/
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100%;
+    
+}
+body {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: var(--Pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/*===================================
+        Typography
+=====================================*/
+h1 {
+font-size: 1.3rem;
+font-weight: 900;
+color: hsl(223, 47%, 23%, .89);
+}
+.order-description {
+    color: rgba(37, 64, 138, 0.699);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1em 0;
+    line-height: 1.7em
+}
+h5 {
+    color: var(--Dark-blue);
+    font-weight: 700;
+    font-size: .9rem;
+}
+.pricing p {
+    font-size: .8rem;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+.change {
+    font-weight: 700;
+    color:var(--Bright-blue);
+}
+.checkout {
+    color: var(--Very-pale-blue);
+    font-weight: 500;
+}
+.cancel-order {
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    font-size: .84rem;
+}
+
+/*===================================
+           Layout
+===================================*/
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+    width: 95%;
+    overflow: hidden;
+}
+.order {
+    background-color: var(--Very-pale-blue);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 20px hsl(245, 75%, 52%, 0.15), 15px 15px 30px hsl(245, 75%, 52%, 0.15);
+}
+.orderbody{
+    padding: 1em;
+}
+ .hero {
+    width: 100%;
+}
+.plan, .buttons {
+    padding: 1em 0;
+}
+.plan, .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pricing {
+    margin-left: .9em;
+}
+
+.change {
+    margin-right: 1em;
+    
+}
+.change a:hover {
+    text-decoration: none;
+}
+.plan {
+    background-color: hsl(225, 100%, 94%, 0.4);
+    border-radius: 14px;
+    padding: 1.2em .5em;
+}
+ 
+.checkout {
+    background-color: var(--Bright-blue);
+    padding: 1em 2em;
+    margin: 1em 0;
+    border-radius: 12px;
+    box-shadow: 0px 20px 20px   hsl(245, 75%, 52%, 0.15);
+}
+.checkout:hover {
+    background-color: hsl(245, 75%, 52%, 0.7);
+    color: var(--Very-pale-blue);
+}
+
+.btn {
+    cursor: pointer;
+}
+.cancel-order:hover,
+.cancel-order:focus {
+    color: var(--Dark-blue);
+}
+
+.cancel-order {
+    padding-top: 1.2em;
+}
+
+/*=====================
+media Queries
+========================*/
+@media (min-width:450px){
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+}
+@media (max-width:320px){
+    html {
+        font-size: 16px;
+    }
+}
+@media (min-width: 2560px){
+    html {
+        font-size: 60px;
+    }
+    .container {
+        max-width: 1440px;
+        margin: auto;
+    }
+    .price img {
+        width: 120px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
